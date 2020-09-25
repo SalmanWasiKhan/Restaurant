@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>admin</title>
+
+  <!-- Reset css -->
+  <link rel="stylesheet" href="../css/reset-css.css">
+
+  <!-- Bootstrap files -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/2380d97057.js" crossorigin="anonymous"></script>
+
+  <!-- Jquery UI -->
+  <link rel="stylesheet" href="../css/jquery-ui.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+<body>
+
+  <section class="row">
+    <section class="sidebar col-2 ">
+      <div class="logo">
+        <a class="pl-1" href="../" target="_blank">
+          <img src="../img/logo.png" class="d-inline-block align-top py-4 pl-2" alt="">
+        </a>
+      </div>
+
+      <div class="info">
+        <p><a href="#">Salman Wasi </a><span>- admin</span></p>
+      </div>
+
+      <ul>
+        <li><button class="sidebar-active" type="button" id="button-info" >Update Info</button></li>
+        <li><button type="button" id="button-menu">Menu items</button></li>
+        <li><button type="button" id="button-orders">Manage Orders</button></li>
+        <li><button type="button" id="button-managers">Managers</button></li>
+      </ul>
+    </section>
+
+    <section class="content col-10 px-0">
+      <div class="h-100">
+      <nav class="navbar navbar-light">
+          <a class="navbar-brand">Update Information</a>
+          <div class="nav">
+            <form class="search-box">
+              <input class="search-text" type="search" placeholder="Search" aria-label="Search">
+              <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <a href="" class="btn btn-outline-dark ml-5">Log out</a>
+          </div>
+        </nav>
+      <section class="panel px-8 pt-9 pb-9">
+
+        <div id="personal-info">
+          <div class="portion personal">
+            <h3>Edit Personal Info</h3>
+            <div class="old-info">
+              <div class="old-info-set">
+                Username
+                <p>salmanwasi</p>
+              </div>
+              <div class="old-info-set">
+                Name
+                <p>Salman Wasi</p> <span><i class="far fa-edit"></i></span>
+                <div class="new-info">
+                  <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Name</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-signature"></i></div>
+                      </div>
+                      <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Change Name">
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                  </form>
+                </div>
+              </div>
+              <div class="old-info-set">
+                Email
+                <p>Salmanwasi8</p> <span><i class="far fa-edit"></i></span>
+                <div class="new-info">
+                  <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                      </div>
+                      <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Change Email">
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                  </form>
+                </div>
+              </div>
+              <div class="old-info-set">
+                <p>Change Password</p> <span></i><i class="far fa-edit"></i></span>
+                <div class="new-info">
+                  <form class="form-inline">
+                    <div>
+                      <label class="sr-only" for="validationTextarea">Old Password</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Old password">
+                    </div>
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">New Password</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-key"></i></div>
+                      </div>
+                      <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="New Password">
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="update-info">
+            <div class="portion">
+              <h3>Location</h3>
+              <div class="old-info">
+                Addresses
+                <div class="old-info-set">
+                  <p>19th Paradise Street Sitia</p><span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>128 Meserole Avenue</p><span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="form-inline">
+                  <label class="sr-only" for="inlineFormInputGroupUsername2">Address</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                    </div>
+                    <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="New Adress">
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Address</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="portion">
+              <h3>Timings</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  <p>Mon-Thu: 7:00am-8:00pm</p><span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>Fri-Sun: 7:00am-10:00pm</p><span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="form-inline">
+                  <label class="sr-only" for="inlineFormInputGroupUsername2">Timings</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="far fa-clock"></i></div>
+                    </div>
+                    <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="New Timings">
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Timings</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="portion social">
+              <h3>Social info</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  Facebook
+                  <p><a href="">SalmanWasiKhan</a></p> <span><i class="far fa-trash-alt"></i><i class="far fa-edit"></i></span>
+                  <div class="new-info">
+                    <form class="form-inline">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">facebook</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fab fa-facebook-f"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Account link">
+                      </div>
+                      <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="old-info-set">
+                  Youtube
+                  <p><a href="">UCuT0rj__qEq_ZO3kYwun4Qg</a></p> <span><i class="far fa-trash-alt"></i><i class="far fa-edit"></i></span>
+                  <div class="new-info">
+                    <form class="form-inline">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Youtube</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fab fa-youtube"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Account link">
+                      </div>
+                      <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="old-info-set">
+                  Twitter
+                  <p><a href="">Salmanwasi8</a></p> <span><i class="far fa-trash-alt"></i><i class="far fa-edit"></i></span>
+                  <div class="new-info">
+                    <form class="form-inline">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Twitter</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fab fa-twitter"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Account link">
+                      </div>
+                      <button type="submit" class="btn btn-secondary btn-sm mb-2">Update</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div id="menu-items">
+            <div class="portion">
+              <h3>Appitizers</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="w-50">
+                  <div class="form-row">
+
+                    <div class="col-7">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Address</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Food item">
+                      </div>
+                    </div>
+
+                    <div class="col-5">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Price">
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <label class="sr-only" for="validationTextarea">Description</label>
+                    <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Description">
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Special
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Dish</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="portion">
+              <h3>Salads</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="w-50">
+                  <div class="form-row">
+
+                    <div class="col-7">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Address</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Food item">
+                      </div>
+                    </div>
+
+                    <div class="col-5">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Price">
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <label class="sr-only" for="validationTextarea">Description</label>
+                    <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Description">
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Special
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Dish</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="portion">
+              <h3>Starters</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="w-50">
+                  <div class="form-row">
+
+                    <div class="col-7">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Address</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Food item">
+                      </div>
+                    </div>
+
+                    <div class="col-5">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Price">
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <label class="sr-only" for="validationTextarea">Description</label>
+                    <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Description">
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Special
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Dish</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="portion">
+              <h3>Main Dishes</h3>
+              <div class="old-info">
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+                <div class="old-info-set">
+                  <p>Tzatsiki</p><p>$3.99</p><p>Refreshing traditional cucumber and garlic yoghurt dip.</p> <span><i class="far fa-trash-alt"></i></span>
+                </div>
+              </div>
+              <div class="new-info">
+                <form class="w-50">
+                  <div class="form-row">
+
+                    <div class="col-7">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Address</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-utensils"></i></div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Food item">
+                      </div>
+                    </div>
+
+                    <div class="col-5">
+                      <label class="sr-only" for="inlineFormInputName2">Price</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Price">
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <label class="sr-only" for="validationTextarea">Description</label>
+                    <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Description">
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Special
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-sm mb-2">Add Dish</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        <div id="orders">
+            <div class="portion">
+              <h3>Pending Orders</h3>
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th colspan="2" scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Party number</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="portion">
+              <h3>Served</h3>
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th colspan="2" scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Party number</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        <div id="managers">
+            <div class="portion">
+              <h3>Managers</h3>
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col" >#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td><i class="fas fa-user-times"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td><i class="fas fa-user-times"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Larry the Bird</td>
+                    <td>Larry the Bird</td>
+                    <td><i class="fas fa-user-times"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="btn btn-sm btn-secondary" type="button" name="button" id="add-manager-btn">Add Another</button>
+            <div class="portion add-manager">
+              <h3>Apoint Mannager</h3>
+              <form class="w-50">
+                <div class="form-row">
+                  <div class="col-7 mb-3">
+                    <label class="sr-only" for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" >
+                  </div>
+                  <div class="col-5 mb-3">
+                    <label class="sr-only" for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-6 mb-3">
+                    <label class="sr-only" for="validationDefaultUsername">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label class="sr-only" for="validationDefault03">Email</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Email">
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label class="sr-only" for="validationDefault05">Password</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Assign Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Manager</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Admin</label>
+                  </div>
+                </div>
+                <button class="btn btn-secondary" type="submit">Add Manager</button>
+                <button class="btn btn-secondary btn-sm ml-14" type="submit" id="close-manager-btn">Close</button>
+              </form>
+            </div>
+          </div>
+
+      </section>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap js file -->
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+  <!-- Main Script -->
+  <script type="text/javascript" src="../js/admin.js"></script>
+
+</body>
+</html>

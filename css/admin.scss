@@ -1,0 +1,209 @@
+$base-color: #343a40;
+$bg-color: darken($base-color,10);
+$border-color: lighten($base-color,15);
+$border-color-light: #ced4da;
+$text-color: lighten($base-color,70);
+$text-color-light: lighten($base-color,40);
+$shadow-color: transparentize($bg-color,.3);
+
+
+body {
+  font-family: "lato";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+/*------------
+// 1. Header
+-------------*/
+
+.sidebar {
+  height: 100vh;
+  padding: 0 0 0 15px;
+  margin: 0;
+  background-color: $bg-color;
+  box-shadow: 5px 0 15px $shadow-color;
+  z-index: 1;
+  // position: fixed;
+
+  .logo {
+    // width: 100%;
+    text-align: center;
+    // padding: 20px;
+    margin: 0 15px 20px 15px;
+    border-bottom: 1px solid $border-color;
+    outline: none;
+
+    img {
+      text-align: center;
+    }
+  }
+
+  .info {
+    color: $text-color;
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+    margin: 0 15px 30px 15px;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+      outline: none;
+    }
+    span {
+      color: $text-color-light;
+      font-size: 14px;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      button {
+        width: 100%;
+        padding: 15px 0 15px 50px ;
+        text-align: left;
+        background-color: $bg-color;
+        border: none;
+        outline: none;
+        color: $text-color;
+        font-size: 14px;
+
+        &:hover {
+          background-color: $border-color;
+        }
+        &.sidebar-active {
+          background-color: $border-color;
+        }
+      }
+    }
+  }
+}
+.content {
+  height: 100vh;
+}
+nav {
+  background-color: $text-color;
+  border-bottom: 2px solid $text-color-light;
+  padding-right: 32px !important;
+
+  .search-box {
+    // background-color: $text-color-light;
+    background: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 2px;
+    border: 1px solid $bg-color;
+
+    &:hover > .search-text {
+      width: 200px;
+      padding: 0 15px;
+    }
+
+    .search-text {
+      border: none;
+      outline: none;
+      background: none;
+      float: left;
+      padding: 0;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 34px;
+      width: 0px;
+    }
+    .search-btn {
+      color: $text-color;
+      font-weight: bolder;
+      float: right;
+      width: 33.5px;
+      height: 33.5px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      background-color: $bg-color;
+      transition: 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+      }
+
+    }
+  }
+
+}
+
+.panel {
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow-y: auto;
+
+  .portion {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $text-color;
+    &.add-manager {
+      display: none;
+    }
+    .old-info {
+      margin-bottom: 16px;
+      .old-info-set {
+        border-left: 1px solid $text-color-light;
+        padding-left: 10px;
+        margin: 5px;
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 12px;
+        p {
+          margin: 0;
+        }
+        a {
+          color: black;
+        }
+        span {
+          position: absolute;
+          top: 0;
+          left: 35%;
+          i {
+            cursor: pointer;
+            opacity: 0.3;
+            transition: 0.2s;
+            padding: 0 5px;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+
+        }
+      }
+    }
+    &.social, &.personal {
+      .new-info {
+        display: none;
+      }
+    }
+    td {
+      i {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.2s;
+        padding: 0 5px;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  #update-info ,#menu-items, #orders, #managers {
+    display: none;
+  }
+
+
+}
