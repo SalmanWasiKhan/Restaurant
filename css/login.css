@@ -1,0 +1,30 @@
+body {
+  background-image: url("../img/menu-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  font-family: "lato";
+}
+.panel {
+  width: 350px;
+  height: 400px;
+  background-color: #ebedee;
+  border: 2px solid #96a0aa;
+  box-shadow: 2px 3px 7px 4px rgba(29,33,36,0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.top {
+  text-align: center;
+  background-color: #1d2124;
+  padding: 15px;
+}
+.bottom {
+  padding: 50px 15px 20px 15px;
+}
+.form-control:focus {
+  border-color: #96a0aa;
+}

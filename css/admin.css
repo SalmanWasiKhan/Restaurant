@@ -1,0 +1,147 @@
+body {
+  font-family: "lato";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto; }
+
+/*------------
+// 1. Header
+-------------*/
+.sidebar {
+  height: 100vh;
+  padding: 0 0 0 15px;
+  margin: 0;
+  background-color: #1d2124;
+  box-shadow: 5px 0 15px rgba(29, 33, 36, 0.7);
+  z-index: 1; }
+  .sidebar .logo {
+    text-align: center;
+    margin: 0 15px 20px 15px;
+    border-bottom: 1px solid #56606a;
+    outline: none; }
+    .sidebar .logo img {
+      text-align: center; }
+  .sidebar .info {
+    color: #ebedee;
+    border-bottom: 1px solid #56606a;
+    text-align: center;
+    margin: 0 15px 30px 15px; }
+    .sidebar .info a {
+      color: #ebedee;
+      text-decoration: none;
+      outline: none; }
+    .sidebar .info span {
+      color: #96a0aa;
+      font-size: 14px; }
+  .sidebar ul {
+    list-style: none;
+    padding: 0; }
+    .sidebar ul li button {
+      width: 100%;
+      padding: 15px 0 15px 50px;
+      text-align: left;
+      background-color: #1d2124;
+      border: none;
+      outline: none;
+      color: #ebedee;
+      font-size: 14px; }
+      .sidebar ul li button:hover {
+        background-color: #56606a; }
+      .sidebar ul li button.sidebar-active {
+        background-color: #56606a; }
+
+.content {
+  height: 100vh; }
+
+nav {
+  background-color: #ebedee;
+  border-bottom: 2px solid #96a0aa;
+  padding-right: 32px !important; }
+  nav .search-box {
+    background: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 2px;
+    border: 1px solid #1d2124; }
+    nav .search-box:hover > .search-text {
+      width: 200px;
+      padding: 0 15px; }
+    nav .search-box .search-text {
+      border: none;
+      outline: none;
+      background: none;
+      float: left;
+      padding: 0;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 34px;
+      width: 0px; }
+    nav .search-box .search-btn {
+      color: #ebedee;
+      font-weight: bolder;
+      float: right;
+      width: 33.5px;
+      height: 33.5px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      background-color: #1d2124;
+      transition: 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      nav .search-box .search-btn:hover {
+        background-color: #ebedee;
+        color: #1d2124; }
+
+.panel {
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow-y: auto; }
+  .panel .portion {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebedee; }
+    .panel .portion.add-manager {
+      display: none; }
+    .panel .portion .old-info {
+      margin-bottom: 16px; }
+      .panel .portion .old-info .old-info-set {
+        border-left: 1px solid #96a0aa;
+        padding-left: 10px;
+        margin: 5px;
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 12px; }
+        .panel .portion .old-info .old-info-set p {
+          margin: 0; }
+        .panel .portion .old-info .old-info-set a {
+          color: black; }
+        .panel .portion .old-info .old-info-set span {
+          position: absolute;
+          top: 0;
+          left: 35%; }
+          .panel .portion .old-info .old-info-set span i {
+            cursor: pointer;
+            opacity: 0.3;
+            transition: 0.2s;
+            padding: 0 5px; }
+            .panel .portion .old-info .old-info-set span i:hover {
+              opacity: 0.7; }
+    .panel .portion.social .new-info, .panel .portion.personal .new-info {
+      display: none; }
+    .panel .portion td i {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.2s;
+      padding: 0 5px; }
+      .panel .portion td i:hover {
+        opacity: 0.9; }
+  .panel #update-info, .panel #menu-items, .panel #orders, .panel #managers {
+    display: none; }
+
+/*# sourceMappingURL=admin.css.map */
